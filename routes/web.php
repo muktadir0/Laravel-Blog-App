@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/index', function () {
+    return view('dashboard');
+});
+
 Route::resource('Blog', \App\Http\Controllers\BlogController::class);
 
 Route::get('/dashboard', function () {

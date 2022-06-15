@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Blog;
 
 class BlogController extends Controller
 {
     public function index()
     {
-        return view('blogs.index');
+        return view('dashboard');
     }
 
     public function store(){
