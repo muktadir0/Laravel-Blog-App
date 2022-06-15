@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::resource('Blog', \App\Http\Controllers\BlogController::class);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
